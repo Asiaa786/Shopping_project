@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 70px;
+            width: 70px;
+            background-color: red;
+            text-align: justify;
+            border: solid black 2px;
+            position: relative;
+            animation-name: animate;
+            animation-duration: 4s;
+            animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045); /* Change to linear or another appropriate value */
+            animation-delay: 1s;
+            animation-iteration-count: 5;
+            animation-direction: reverse;
+        }
+    
+        @keyframes animate {
+            0% {left: 10px; top: 0px;}
+            50% {left:  150px; top: 100px;}
+            100%{left: 300px; top: 0px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div  class="box">Animated Box</div>
+</body>
+</html>

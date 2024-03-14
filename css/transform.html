@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Tarnsform</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 150px;
+        background-color: cadetblue;
+        border: solid beige 2px;
+        border-radius: 10px;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        /* transition: all 2.5s ease-out; */
+        text-align: center;
+        text-align-last: center;
+        animation-name: boxmovie;
+        animation-duration: 3sec;
+        animation-delay: 1sec;
+        animation-timing-function: ease-in;
+      }
+      /* .box:hover { */
+        /* transform: rotate(380deg); */
+        /* transform: scale(2); */
+        /* transform: skew(90deg); */
+      /* } */
+      @keyframes boxmovie {
+        from {
+          left: 10px;
+        }
+        to {
+          left: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"><b>Now a days Asia Condition </b></div>
+  </body>
+</html>
